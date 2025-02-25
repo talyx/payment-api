@@ -49,3 +49,8 @@ or using uvicorn:
 uvicorn app.services.notification:app --host 0.0.0.0 --port 8002 --reload
 ```
 
+Below is an example command for running a PostgreSQL database in Docker:
+
+```sh
+docker run --name test-pg-15 -p 5432:5432 -e POSTGRES_USER=testuser -e POSTGRES_PASSWORD=testpass -e POSTGRES_DB=test -d postgres:15
+```
